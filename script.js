@@ -25,7 +25,6 @@ $.ajax({
 
 
 	_.map(result, function (obj, key) {
-		console.log(obj);
 		contentFoot.push(
 			'<tr>',
 				'<td>' + obj.homeTeamName + '</td>',
