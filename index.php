@@ -33,6 +33,8 @@
 	    $stream_context = stream_context_create($reqPrefs);
 	    $response = file_get_contents($uri, false, $stream_context);
 	    $fixtures = json_decode($response);
+	
+	print_r($fixtures);
 
 ?>
 
@@ -49,8 +51,6 @@
 
 	<script>
 		var ufcData = <?php echo $output; ?>;
-		var	footballData = <?php echo $respose; ?>;
-
 	</script>
 	<script src="script.js"></script>
 </body>
