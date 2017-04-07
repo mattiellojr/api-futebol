@@ -24,17 +24,42 @@
         $output = curl_exec($ch); 
 
         curl_close($ch);  
-
-
 ?>
 
 	<section class="container">
 		<article class="row">
 			<div class="col-lg-12">
-				<h2>JSON Futebol</h2>			
+				<h2>JSON UFC</h2>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Arena</th>
+							<th>Título</th>
+							<th>Data</th>
+							<th>Local</th>
+							<th>Luta Principal</th>
+						</tr>
+					</thead>
+					<tbody id="body-ufc">
+						
+					</tbody>
+				</table>			
 			</div>
 			<div class="col-lg-12">
-				<h2>JSON UFC</h2>
+				<h2>JSON Futebol</h2>
+
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Time 1</th>
+							<th>Time 2</th>
+							<th>Data</th>
+						</tr>
+					</thead>
+					<tbody id="body-foot">
+						
+					</tbody>
+				</table>
 			</div>
 		</article>
 	</section>
