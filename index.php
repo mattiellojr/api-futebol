@@ -49,7 +49,7 @@
 
 	<script>
 		var ufcData = <?php echo $output; ?>;
-		var	footballData = <?php echo $response; ?>;
+// 		var	footballData = <?php echo $response; ?>;
 
 	</script>
 	<script src="script.js"></script>
