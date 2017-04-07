@@ -25,14 +25,6 @@
 
         curl_close($ch);  
 
-        #CURL FUTEBOL
-
-	    $uri = 'http://api.football-data.org/v1/competitions/354/fixtures/?matchday=22';
-	    $reqPrefs['http']['method'] = 'GET';
-	    $reqPrefs['http']['header'] = 'X-Auth-Token: a48fda37e7f64616a1b61b61b3b66cfc';
-	    $stream_context = stream_context_create($reqPrefs);
-	    $response = file_get_contents($uri, false, $stream_context);
-	    $fixtures = json_decode($response);
 
 ?>
 
@@ -49,7 +41,6 @@
 
 	<script>
 		var ufcData = <?php echo $output; ?>;
-// 		var	footballData = <?php echo $response; ?>;
 
 	</script>
 	<script src="script.js"></script>
